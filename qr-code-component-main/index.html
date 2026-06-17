@@ -6,53 +6,63 @@
   <title>Front End Mentor | QR Code Component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="images/favicon-32x32.png">
   <style>
     body{
+      margin:0;
+      min-height:100vh;
       background-color:hsl(212, 45%, 89%);
       display:flex;
       justify-content:center;
       align-items:center;
       flex-direction:column;
+      min-height:100vh;
+      font-family:"Outfit", sans-serif ;
+      font-size:15px;
     }
+
     .container{
-      width:200px;
+      width:280px;
       margin-top:80px;
-      border-radius:10px;
+      margin-top:80px;
+      border-radius:20px;
       background-color:hsl(0, 0%, 100%);
-      padding:10px;
-      box-shadow:0px 1px 20px hsla(217, 45%, 22%, 0.402);
+      padding:24px;
+      box-shadow:0px 10px 20px hsla(218, 44%, 22%, 0.2);
     }
+
     .qrCodeContainer{
       text-align:center;
-      
     }
-    .qrCode{
-      width:200px;
-      height: 200px;
-      object-fit:contain;
-      vertical-align: middle;
-      border-radius:8px;
 
+    .qrCode{
+      width:100%;
+      height:auto;
+      object-fit:cover;
+      display:block;
+      border-radius:16px;
+      margin:0 auto;
     }
 
     p{
-      font-family:"Outfit", sans-serif ;
+      margin:0;
     }
 
     .intro{
-      font-weight:bold;
+      font-weight:700;
       text-align:center;
       color:hsl(218, 44%, 22%);
+      margin: 24px 0 8px 10px;
+      font-size:18px;
     }
 
     .info{
       text-align:center;
       color:hsl(216, 15%, 48%);
-      font-size:11px;
-      margin-bottom:15px;
+      font-size:15px;
+      margin: 0 0 24px 0;
     }
   </style>
 </head>
